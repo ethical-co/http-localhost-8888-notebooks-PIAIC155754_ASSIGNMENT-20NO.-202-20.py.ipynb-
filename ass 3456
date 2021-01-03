@@ -1,0 +1,48 @@
+Numpy_Assignment_2::¶
+Question:1 Convert a 1D array to a 2D array with 2 rows? Desired output:: array([[0, 1, 2, 3, 4], [5, 6, 7, 8, 9]])
+
+import numpy as np
+arr=np.array([[0,1,2,3,4],[5,6,7,8,9]])
+arr_2d=np.reshape
+print(arr)
+[[0 1 2 3 4]
+ [5 6 7 8 9]]
+How to stack two arrays vertically?
+Desired Output:: array([[0, 1, 2, 3, 4], [5, 6, 7, 8, 9], [1, 1, 1, 1, 1], [1, 1, 1, 1, 1]])
+
+import numpy as numpy
+a = np.array([[0,1,2,3,4]])
+b = np.array([[5,6,7,8,9]])
+c = np.array([[1,1,1,1,1]])
+d = np.array([[1,1,1,1,1]])
+np.vstack((a,b,c,d))
+array([[0, 1, 2, 3, 4],
+       [5, 6, 7, 8, 9],
+       [1, 1, 1, 1, 1],
+       [1, 1, 1, 1, 1]])
+How to stack two arrays horizontally?¶
+Desired Output:: array([[0, 1, 2, 3, 4, 1, 1, 1, 1, 1], [5, 6, 7, 8, 9, 1, 1, 1, 1, 1]])
+
+import numpy as np
+a = np.array((0,1,2,3,4,1,1,1,1,1))
+b = np.array((5,6,7,8,9,1,1,1,1,1))
+np.hstack((a,b))
+array([0, 1, 2, 3, 4, 1, 1, 1, 1, 1, 5, 6, 7, 8, 9, 1, 1, 1, 1, 1])
+How to convert an array of arrays into a flat 1d array?
+Desired Output:: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+import numpy as np
+array2D = np.array([[31, 12, 43], [21, 9, 16], [0, 9, 0]])
+print("Given array:\n",array2D)
+Given array:
+ [[31 12 43]
+ [21  9 16]
+ [ 0  9  0]]
+res = array2D.ravel()
+print("Flattened array:\n ", res)
+Flattened array:
+  [31 12 43 21  9 16  0  9  0]
+How to Convert higher dimension into one dimension?¶
+Desired Output:: array([ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14])
+
+​
